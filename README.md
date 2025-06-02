@@ -71,27 +71,57 @@ cd meme_generator
 npm start 
 ```
 
-API Used
+###API Used
 --------
+```bash
 - https://api.imgflip.com/get_memes
   Used to fetch a list of meme templates with their image URLs and names.
+```
 
 
-Example Usage
+###Example Usage
 -------------
+```bash
 1. Open the app (npm start).
 2. On the Home page, choose a meme template from the list.
 3. Click on a template to go to the Edit page.
 4. Enter your custom top and bottom text.
 5. Drag the text to position it anywhere on the image.
 6. Click the "Download" button to export the meme as a JPEG.
+```
+
+
+###Learnings
+---------
+```bash 
+- Gained practical experience with React Hooks:
+  • useState – for managing local component state
+  • useEffect – for fetching meme data on component mount
+  • useNavigate – for programmatic page navigation
+  • useParams – for retrieving route parameters (e.g. meme ID)
+
+- Understood routing with React Router DOM:
+  • Route-based navigation using <Routes> and <Route>
+  • Navigating between Home and Edit pages
+  • Extracting URL parameters for dynamic rendering
+
+- Learned to integrate third-party libraries:
+  • react-draggable – to drag and reposition meme text
+  • react-export-to-jpeg – to export created memes
+
+- Improved component-based thinking and props usage
+- Practiced API calls using async/await and fetch
+- Strengthened knowledge of JSX and arrow functions
+```
 
 
 
-Future Improvements
+###Future Improvements
 -------------------
+```bash
 - Add support for uploading custom images.
 - Allow users to add more than two text fields.
 - Enable text customization (font, size, color, shadow).
 - Save memes to local gallery or share directly to social media.
 - Add undo/redo functionality while editing.
+```
